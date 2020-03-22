@@ -14,6 +14,6 @@ jobs:
     name: Debug abeyuya/actions-mention-to-slack
     steps:
       - name: Run
-        uses: abeyuya/actions-mention-to-slack@v1.2
+        uses: abeyuya/actions-mention-to-slack@v1.3
         env:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
