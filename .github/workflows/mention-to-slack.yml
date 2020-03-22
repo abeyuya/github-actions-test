@@ -14,6 +14,9 @@ jobs:
     name: Debug abeyuya/actions-mention-to-slack
     steps:
       - name: Run
-        uses: abeyuya/actions-mention-to-slack@v1.3
-        env:
-          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+        uses: abeyuya/actions-mention-to-slack@v1.5
+        with:
+          slack-webhook-url: ${{ secrets.SLACK_WEBHOOK_URL }}
+          github-to-slack-username:
+            abeyuya: abeyuya
+            github_username: "Slack username here"
