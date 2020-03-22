@@ -15,7 +15,7 @@ jobs:
     steps:
       - name: Run
         id: hello
-        uses: abeyuya/actions-mention-to-slack@v1
+        uses: abeyuya/actions-mention-to-slack@v1.1
         with:
           who-to-greet: "Mona the Octocat"
       # Use the output from the `hello` step
