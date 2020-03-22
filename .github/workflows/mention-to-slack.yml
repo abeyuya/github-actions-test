@@ -1,6 +1,6 @@
 on:
   issues:
-    types: [created]
+    types: [opened]
   issue_comment:
     types: [created]
   pull_request:
