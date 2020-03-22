@@ -14,10 +14,6 @@ jobs:
     name: Debug abeyuya/actions-mention-to-slack
     steps:
       - name: Run
-        id: hello
-        uses: abeyuya/actions-mention-to-slack@v1.1
-        with:
-          who-to-greet: "Mona the Octocat"
-      # Use the output from the `hello` step
-      - name: Get the output time
-        run: echo "The time was ${{ steps.hello.outputs.time }}"
+        uses: abeyuya/actions-mention-to-slack@v1.2
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
