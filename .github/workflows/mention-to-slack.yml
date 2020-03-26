@@ -16,7 +16,8 @@ jobs:
     name: Debug abeyuya/actions-mention-to-slack
     steps:
       - name: Run
-        uses: abeyuya/actions-mention-to-slack@v1.21
+        uses: abeyuya/actions-mention-to-slack@v1.22
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
           slack-webhook-url: ${{ secrets.SLACK_WEBHOOK_URL }}
+          icon-url: https://img.icons8.com/color/256/000000/github-2.png
