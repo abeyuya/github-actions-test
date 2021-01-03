@@ -20,5 +20,5 @@ jobs:
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
           slack-webhook-url: ${{ secrets.SLACK_WEBHOOK_URL }}
-          bot-name: "github-actions-test"
+          bot-name: "github-actions-test-aaa"
           run-id: ${{ github.run_id }}
