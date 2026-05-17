@@ -1,0 +1,18 @@
+on:
+  workflow_dispatch:
+
+jobs:
+  latest-tag:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: read
+    steps:
+      - name: Run
+        uses: abeyuya/actions-mention-to-slack@latest
+        with:
+          type: scheduled-reminder
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          slack-webhook-url: ${{ secrets.SLACK_WEBHOOK_URL }}
+          bot-name: "scheduled-reminder (latest-tag)"
+          run-id: ${{ github.run_id }}
