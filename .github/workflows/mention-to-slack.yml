@@ -19,7 +19,7 @@ jobs:
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
           slack-webhook-url: ${{ secrets.SLACK_WEBHOOK_URL }}
-          bot-name: "latest-tag"
+          bot-name: "latest-tag-hoge"
           run-id: ${{ github.run_id }}
           
   v2-tag:
